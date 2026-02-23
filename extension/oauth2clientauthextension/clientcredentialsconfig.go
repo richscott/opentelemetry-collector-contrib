@@ -118,26 +118,8 @@ func (c *clientCredentialsConfig) createConfig() (*clientcredentials.Config, err
 	}, nil
 }
 
-// TokenSource creates an oauth2.TokenSource from the exported ClientCredentialsConfig
-func (c *ClientCredentialsConfig) TokenSource(ctx context.Context) oauth2.TokenSource {
-	internalConfig := &clientCredentialsConfig{
-		Config: clientcredentials.Config{
-			ClientID:       c.Config.ClientID,
-			ClientSecret:   string(c.Config.ClientSecret),
-			TokenURL:       c.Config.TokenURL,
-			Scopes:         c.Config.Scopes,
-			EndpointParams: c.Config.EndpointParams,
-			AuthStyle:      c.AuthStyle,
-		},
-		ClientIDFile:     c.Config.ClientIDFile,
-		ClientSecretFile: c.Config.ClientSecretFile,
-		ExpiryBuffer:     time.Duration(c.ExpiryBuffer) * time.Second,
-	}
-	return internalConfig.tokenSource(ctx)
-}
-
-func (c *clientCredentialsConfig) tokenSource(ctx context.Context) oauth2.TokenSource {
-	return oauth2.ReuseTokenSourceWithExpiry(nil, clientCredentialsTokenSource{ctx: ctx, config: c}, c.ExpiryBuffer)
+func (c *clientCredentialsConfig) TokenSource(ctx context.Context) oauth2.TokenSource {
+	return clientCredentialsTokenSource{ctx: ctx, config: c}
 }
 
 func (c *clientCredentialsConfig) TokenEndpoint() string {
