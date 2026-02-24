@@ -44,21 +44,13 @@ func newClientCredentialsGrantTypeConfig(cfg *Config) *clientCredentialsConfig {
 //
 // Example - Retrieve secret from file:
 //
-//	cfg := ClientCredentialsConfig{
-//		Config: Config{
+//	cfg := clientCredentialsConfig{
+//		Config: clientcredentials.Config{
 //			ClientID:     "clientId",
 //			...
 //		},
 //		ClientSecretFile: "/path/to/client/secret",
 //	}
-type ClientCredentialsConfig struct {
-	Config Config
-
-	AuthStyle    oauth2.AuthStyle
-	ExpiryBuffer int
-}
-
-// clientCredentialsConfig is an internal version that embeds clientcredentials.Config
 type clientCredentialsConfig struct {
 	clientcredentials.Config
 
