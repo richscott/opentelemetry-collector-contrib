@@ -57,6 +57,8 @@ github.com/go-viper/mapstructure/v2 v2.5.0 h1:vM5IJoUAy3d7zRSVtIwQgBj7BiWtMPfmPE
 github.com/go-viper/mapstructure/v2 v2.5.0/go.mod h1:oJDH3BJKyqBA2TXFhDsKDGDTlndYOZ6rGS0BRZIxGhM=
 github.com/gobwas/glob v0.2.3 h1:A4xDbljILXROh+kObIiy5kIaPYD8e96x1tgBhUI5J+Y=
 github.com/gobwas/glob v0.2.3/go.mod h1:d3Ez4x06l9bZtSvzIay5+Yzi0fmZzPgnTbPcKjJAkT8=
+github.com/golang-jwt/jwt/v5 v5.3.1 h1:kYf81DTWFe7t+1VvL7eS+jKFVWaUnK9cB1qbwn63YCY=
+github.com/golang-jwt/jwt/v5 v5.3.1/go.mod h1:fxCRLWMO43lRc8nhHWY6LGqRcf+1gQWArsqaEUEa5bE=
 github.com/golang/snappy v0.0.4 h1:yAGX7huGHXlcLOEtBnF4w7FQwA26wojNCwOYAEhLjQM=
 github.com/golang/snappy v0.0.4/go.mod h1:/XxbfmMg8lxefKM7IXC3fBNl/7bRcc72aCRzEWrmP2Q=
 github.com/google/go-cmp v0.7.0 h1:wk8382ETsv4JYUZwIsn6YpYiWiBsYLSJiTsyBybVuN8=
@@ -174,6 +176,10 @@ go.opentelemetry.io/collector/confmap/xconfmap v0.146.2-0.20260219223409-66996ad
 go.opentelemetry.io/collector/confmap/xconfmap v0.146.2-0.20260219223409-66996adfaaf7/go.mod h1:4IEuoWr9PE02eS7R5GRR+6+iIpM2dqtS58bZEPSs28c=
 go.opentelemetry.io/collector/extension v1.52.1-0.20260219223409-66996adfaaf7 h1:p9iFZRzMPKCbB23EklbSxON8xhaOWhLmGyFl7mz6zz0=
 go.opentelemetry.io/collector/extension v1.52.1-0.20260219223409-66996adfaaf7/go.mod h1:dSkpNyMkrjpIbjLieaKTZWXhLdwRGGvqCxDI4A0fdhE=
+go.opentelemetry.io/collector/extension/extensionauth v1.52.1-0.20260219223409-66996adfaaf7 h1:Eg1PDHccCSmWDuzATuRb0ZNxDlpMsMi6NIgYP12ZVxw=
+go.opentelemetry.io/collector/extension/extensionauth v1.52.1-0.20260219223409-66996adfaaf7/go.mod h1:RQlaU8zSxKSSPaXnyfwwykzyc6nfsGFGmpGfS0hfaew=
+go.opentelemetry.io/collector/extension/extensiontest v0.146.2-0.20260219223409-66996adfaaf7 h1:+GgfiQaBkYE05afLuyyERgAnHuV5aUKgiVYfldGMrq0=
+go.opentelemetry.io/collector/extension/extensiontest v0.146.2-0.20260219223409-66996adfaaf7/go.mod h1:aSpGn9vUjwBMJu1iXY+eNwfPUN16HEG3GDK2Y9gvb4s=
 go.opentelemetry.io/collector/featuregate v1.52.1-0.20260219223409-66996adfaaf7 h1:/JqPGoypD+Yh65JjADieHxBzL1g8bWVP7TV3m1VQbqE=
 go.opentelemetry.io/collector/featuregate v1.52.1-0.20260219223409-66996adfaaf7/go.mod h1:PS7zY/zaCb28EqciePVwRHVhc3oKortTFXsi3I6ee4g=
 go.opentelemetry.io/collector/internal/componentalias v0.146.2-0.20260219223409-66996adfaaf7 h1:P/6WjsUD4IS7Xkb7vUZgrE9P/U/TCSI166HA1pQGeh0=
@@ -256,6 +262,10 @@ golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGm
 golang.org/x/tools v0.0.0-20191119224855-298f0cb1881e/go.mod h1:b+2E5dAYhXwXZwtnZ6UAqBI28+e2cm9otk0dWdXHAEo=
 golang.org/x/tools v0.1.12/go.mod h1:hNGJHUnrk76NpqgfD5Aqm5Crs+Hm0VOH/i9J2+nxYbc=
 golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
+google.golang.org/genproto/googleapis/rpc v0.0.0-20251222181119-0a764e51fe1b h1:Mv8VFug0MP9e5vUxfBcE3vUkV6CImK3cMNMIDFjmzxU=
+google.golang.org/genproto/googleapis/rpc v0.0.0-20251222181119-0a764e51fe1b/go.mod h1:j9x/tPzZkyxcgEFkiKEEGxfvyumM01BEtsW8xzOahRQ=
+google.golang.org/grpc v1.79.1 h1:zGhSi45ODB9/p3VAawt9a+O/MULLl9dpizzNNpq7flY=
+google.golang.org/grpc v1.79.1/go.mod h1:KmT0Kjez+0dde/v2j9vzwoAScgEPx/Bw1CYChhHLrHQ=
 google.golang.org/protobuf v1.36.11 h1:fV6ZwhNocDyBLK0dj+fg8ektcVegBBuEolpbTQyBNVE=
 google.golang.org/protobuf v1.36.11/go.mod h1:HTf+CrKn2C3g5S8VImy6tdcUvCska2kB7j23XfzDpco=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=

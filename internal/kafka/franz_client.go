@@ -27,8 +27,8 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/config/configcompression"
 	"go.uber.org/zap"
-	"golang.org/x/oauth2"
 
+	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/oauth2clientauthextension"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/kafka/configkafka"
 )
 
@@ -309,10 +309,10 @@ func configureKgoSASL(cfg *configkafka.SASLConfig, host component.Host) (kgo.Opt
 			return nil, fmt.Errorf("extension %s is not configured", cfg.OAuthBearerTokenSource.Name())
 		}
 
-		m = oauth.Oauth(func(_ context.Context) (oauth.Auth, error) {
-			ts := oauthExt.(oauth2.TokenSource)
+		m = oauth.Oauth(func(ctx context.Context) (oauth.Auth, error) {
+			ts := oauthExt.(oauth2clientauthextension.ContextTokenSource)
 
-			token, err := ts.Token()
+			token, err := ts.Token(ctx)
 			if err != nil {
 				return oauth.Auth{}, err
 			}
