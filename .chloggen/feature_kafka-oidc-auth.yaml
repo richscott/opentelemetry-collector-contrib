@@ -17,7 +17,21 @@ issues: [41872]
 # Use pipe (|) for multiline entries.
 subtext: |
   It provides an implementation of the sarama.AccessTokenProvider interface, supporting the
-  client_credentials Grant Type, and a background token refresh.
+  client_credentials Grant Type, and a background token refresh. This change uses the
+  oauth2clientauthextension for acquisition and management of tokens. To use this, your
+  configuration would be something like:
+
+  extensions:
+    oauth2client:
+      client_id_file: /path/to/client_id_file
+      client_secret: /path/to/client_secret_file
+
+  exporters:
+    kafka:
+      auth:
+        sasl:
+          mechanism: OAUTHBEARER
+          oauthbearer_token_source: oauth2client
 
 # If your change doesn't affect end users or the exported elements of any package,
 # you should instead start your pull request title with [chore] or use the "Skip Changelog" label.
