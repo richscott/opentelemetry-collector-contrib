@@ -119,6 +119,7 @@ exporter/googlecloudstorageexporter
 exporter/googlemanagedprometheusexporter
 exporter/honeycombmarkerexporter
 exporter/influxdbexporter
+extension/oauth2clientauthextension
 pkg/kafka/configkafka
 internal/kafka
 pkg/batchpersignal
@@ -169,7 +170,6 @@ extension/healthcheckv2extension
 extension/httpforwarderextension
 extension/jaegerremotesampling
 extension/k8sleaderelector
-extension/oauth2clientauthextension
 extension/observer
 extension/observer/cfgardenobserver
 internal/docker
