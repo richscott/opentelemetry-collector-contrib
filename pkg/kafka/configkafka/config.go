@@ -430,8 +430,7 @@ func (c SASLConfig) Validate() error {
 			return errors.New("password is required")
 		}
 	case "OAUTHBEARER":
-		if c.OAuthBearerTokenSource.Type().String() != component.KindExtension.String() ||
-			c.OAuthBearerTokenSource.Name() == "" {
+		if c.OAuthBearerTokenSource == (component.ID{}) {
 			return errors.New("oauth2authclient extension is required")
 		}
 	default:

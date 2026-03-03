@@ -28,8 +28,8 @@ import (
 	"go.opentelemetry.io/collector/config/configcompression"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/oauth2clientauthextension"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/kafka/configkafka"
+	"golang.org/x/oauth2"
 )
 
 const (
@@ -39,6 +39,10 @@ const (
 	AWSMSKIAMOAUTHBEARER = "AWS_MSK_IAM_OAUTHBEARER" //nolint:gosec // These aren't credentials.
 	OAUTHBEARER          = "OAUTHBEARER"
 )
+
+type contextTokenSource interface {
+	Token(context.Context) (*oauth2.Token, error)
+}
 
 // NewFranzSyncProducer creates a new Kafka client using the franz-go library.
 func NewFranzSyncProducer(
@@ -306,11 +310,11 @@ func configureKgoSASL(cfg *configkafka.SASLConfig, host component.Host) (kgo.Opt
 		extMap := host.GetExtensions()
 		oauthExt, exists := extMap[cfg.OAuthBearerTokenSource]
 		if !exists {
-			return nil, fmt.Errorf("extension %s is not configured", cfg.OAuthBearerTokenSource.Name())
+			return nil, fmt.Errorf("extension %s is not configured", cfg.OAuthBearerTokenSource)
 		}
 
 		m = oauth.Oauth(func(ctx context.Context) (oauth.Auth, error) {
-			ts := oauthExt.(oauth2clientauthextension.ContextTokenSource)
+			ts := oauthExt.(contextTokenSource)
 
 			token, err := ts.Token(ctx)
 			if err != nil {

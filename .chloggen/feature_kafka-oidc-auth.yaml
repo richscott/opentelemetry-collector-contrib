@@ -16,10 +16,11 @@ issues: [41872]
 # These lines will be padded with 2 spaces and then inserted directly into the document.
 # Use pipe (|) for multiline entries.
 subtext: |
-  It provides an implementation of the sarama.AccessTokenProvider interface, supporting the
-  client_credentials Grant Type, and a background token refresh. This change uses the
-  oauth2clientauthextension for acquisition and management of tokens. To use this, your
-  configuration would be something like:
+  It provides an implementation of SASL/OAUTHBEARER for Kafka components, by
+  integrating with auth extensions that provide OAuth2 tokens, such as oauth2clientauth.
+  Token acqusition/refresh/exchange is controlled by auth extensions.
+
+  To use this, your configuration would be something like:
 
   extensions:
     oauth2client:
