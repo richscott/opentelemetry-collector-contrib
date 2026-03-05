@@ -55,8 +55,6 @@ github.com/go-viper/mapstructure/v2 v2.5.0 h1:vM5IJoUAy3d7zRSVtIwQgBj7BiWtMPfmPE
 github.com/go-viper/mapstructure/v2 v2.5.0/go.mod h1:oJDH3BJKyqBA2TXFhDsKDGDTlndYOZ6rGS0BRZIxGhM=
 github.com/gobwas/glob v0.2.3 h1:A4xDbljILXROh+kObIiy5kIaPYD8e96x1tgBhUI5J+Y=
 github.com/gobwas/glob v0.2.3/go.mod h1:d3Ez4x06l9bZtSvzIay5+Yzi0fmZzPgnTbPcKjJAkT8=
-github.com/golang-jwt/jwt/v5 v5.3.1 h1:kYf81DTWFe7t+1VvL7eS+jKFVWaUnK9cB1qbwn63YCY=
-github.com/golang-jwt/jwt/v5 v5.3.1/go.mod h1:fxCRLWMO43lRc8nhHWY6LGqRcf+1gQWArsqaEUEa5bE=
 github.com/golang/protobuf v1.5.4 h1:i7eJL8qZTpSEXOPTxNKhASYpMn+8e5Q6AdndVa1dWek=
 github.com/golang/protobuf v1.5.4/go.mod h1:lnTiLA8Wa4RWRcIUkrtSVa5nRhsEGBg48fD6rSs7xps=
 github.com/google/go-cmp v0.7.0 h1:wk8382ETsv4JYUZwIsn6YpYiWiBsYLSJiTsyBybVuN8=
@@ -180,12 +178,6 @@ go.opentelemetry.io/collector/consumer/consumertest v0.147.0 h1:AU3sUm2L3pezrg6h
 go.opentelemetry.io/collector/consumer/consumertest v0.147.0/go.mod h1:QWGFRmeYNbKaseDTNT3a2iGDmjl+DCZnLzMP7Rjj0JM=
 go.opentelemetry.io/collector/consumer/xconsumer v0.147.0 h1:XJVQc2dYyalaFXMTa4/RE+aweQTiBpw1edfwdCIJSxw=
 go.opentelemetry.io/collector/consumer/xconsumer v0.147.0/go.mod h1:mtwh1VsUoGjxwdmXEzjbswH7KAGByJNCIMHmhqwXeK0=
-go.opentelemetry.io/collector/extension v1.53.0 h1:rgg0zQe6zHPF2okbnoEA7UQ2Tyw12lwU1ToQTfxvp6M=
-go.opentelemetry.io/collector/extension v1.53.0/go.mod h1:UawW4sBNV+TIXgz1GR+UtnMQYb8AfFbhEdKoKTYyf7M=
-go.opentelemetry.io/collector/extension/extensionauth v1.53.0 h1:zo2Sm6G6SrtYondJz/c4hGWwx/V2H4nZlf8yZlo0vIM=
-go.opentelemetry.io/collector/extension/extensionauth v1.53.0/go.mod h1:xZVclEW3nnh1U+eu7apnt9KI+nf3MalpL40dhUeUtZQ=
-go.opentelemetry.io/collector/extension/extensiontest v0.147.0 h1:UfJQ+kxTXLPjMDhlfoFOp4EM2KykfAHjTUVPYQzDHw0=
-go.opentelemetry.io/collector/extension/extensiontest v0.147.0/go.mod h1:td5cl9har3aV7ZWwASX6oO4PakFwxR3MQmwRkvFyQhM=
 go.opentelemetry.io/collector/featuregate v1.53.0 h1:cgjXdtl7jezWxq6V0eohe/JqjY4PBotZGb5+bTR2OJw=
 go.opentelemetry.io/collector/featuregate v1.53.0/go.mod h1:PS7zY/zaCb28EqciePVwRHVhc3oKortTFXsi3I6ee4g=
 go.opentelemetry.io/collector/filter v0.147.0 h1:/s0gDzerbPJN1QaSvzH6FRm7FOe6EokksZghKNisi0g=

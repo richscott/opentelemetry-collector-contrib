@@ -65,8 +65,6 @@ github.com/goccy/go-json v0.10.5 h1:Fq85nIqj+gXn/S5ahsiTlK3TmC85qgirsdTP/+DeaC4=
 github.com/goccy/go-json v0.10.5/go.mod h1:oq7eo15ShAhp70Anwd5lgX2pLfOS3QCiwU/PULtXL6M=
 github.com/gogo/protobuf v1.3.2 h1:Ov1cvc58UF3b5XjBnZv7+opcTcQFZebYjWzi34vdm4Q=
 github.com/gogo/protobuf v1.3.2/go.mod h1:P1XiOD3dCwIKUDQYPy72D8LYyHL2YPYrpS2s69NZV8Q=
-github.com/golang-jwt/jwt/v5 v5.3.1 h1:kYf81DTWFe7t+1VvL7eS+jKFVWaUnK9cB1qbwn63YCY=
-github.com/golang-jwt/jwt/v5 v5.3.1/go.mod h1:fxCRLWMO43lRc8nhHWY6LGqRcf+1gQWArsqaEUEa5bE=
 github.com/golang/protobuf v1.5.4 h1:i7eJL8qZTpSEXOPTxNKhASYpMn+8e5Q6AdndVa1dWek=
 github.com/golang/protobuf v1.5.4/go.mod h1:lnTiLA8Wa4RWRcIUkrtSVa5nRhsEGBg48fD6rSs7xps=
 github.com/google/go-cmp v0.7.0 h1:wk8382ETsv4JYUZwIsn6YpYiWiBsYLSJiTsyBybVuN8=
@@ -218,8 +216,6 @@ go.opentelemetry.io/collector/exporter/xexporter v0.147.0 h1:3PqWr987tOqYl08sijJ
 go.opentelemetry.io/collector/exporter/xexporter v0.147.0/go.mod h1:ILJrtuHTQH+bkG5uRRDMVI2cyQrcvL7oZR1FwegNjV8=
 go.opentelemetry.io/collector/extension v1.53.0 h1:rgg0zQe6zHPF2okbnoEA7UQ2Tyw12lwU1ToQTfxvp6M=
 go.opentelemetry.io/collector/extension v1.53.0/go.mod h1:UawW4sBNV+TIXgz1GR+UtnMQYb8AfFbhEdKoKTYyf7M=
-go.opentelemetry.io/collector/extension/extensionauth v1.53.0 h1:zo2Sm6G6SrtYondJz/c4hGWwx/V2H4nZlf8yZlo0vIM=
-go.opentelemetry.io/collector/extension/extensionauth v1.53.0/go.mod h1:xZVclEW3nnh1U+eu7apnt9KI+nf3MalpL40dhUeUtZQ=
 go.opentelemetry.io/collector/extension/extensiontest v0.147.0 h1:UfJQ+kxTXLPjMDhlfoFOp4EM2KykfAHjTUVPYQzDHw0=
 go.opentelemetry.io/collector/extension/extensiontest v0.147.0/go.mod h1:td5cl9har3aV7ZWwASX6oO4PakFwxR3MQmwRkvFyQhM=
 go.opentelemetry.io/collector/extension/xextension v0.147.0 h1:qOTnVoLomYZVpCbynYI1z2Su7MyURW3UeTpXVPXydsg=
